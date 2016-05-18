@@ -1,0 +1,52 @@
+CREATE DATABASE Users;
+USE Users;
+
+CREATE TABLE Users(
+	id INT(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(25) NOT NULL,
+	age INT(3) NOT NULL,
+	isAdmin BIT NOT NULL,
+	createdDate DATE NOT NULL DEFAULT '2016-05-19'
+);
+
+INSERT INTO Users (name, age, isAdmin, createdDate)
+	VALUES 	('Tirion', 30, 1, DEFAULT),
+			('Ballafym', 25, 0, DEFAULT),
+			('Dofym', 18, 0, DEFAULT),
+			('Dorinn', 15, 0, DEFAULT),
+			('Stonestone', 42, 0, DEFAULT),
+			('Darkblade', 15, 0, DEFAULT),
+			('Dany', 13, 0, DEFAULT),
+			('Forcefist', 23, 0, DEFAULT),
+			('Spellstaff', 26, 0, DEFAULT),
+			('Blueworker', 12, 0, DEFAULT),
+			('Stoneworm', 18, 1, DEFAULT),
+			('Lanis', 19, 0, DEFAULT),
+			('Brighthunter', 27, 0, DEFAULT),
+			('Dawnstalker', 35, 0, DEFAULT),
+			('Kelegar', 31, 0, DEFAULT),
+			('Anafym', 30, 0, DEFAULT),
+			('Kewield', 22, 0, DEFAULT),
+			('Modidi', 22, 0, DEFAULT),
+			('Bladeflame', 22, 0, DEFAULT),
+			('Lightstalker', 23, 0, DEFAULT),
+			('Manius', 31, 1, DEFAULT),
+			('Redshaper', 27, 0, DEFAULT),
+			('Sabor', 14, 0, DEFAULT),
+			('Magehammer', 17, 0, DEFAULT),
+			('Agagelv', 33, 0, DEFAULT),
+			('Lightfont', 25, 0, DEFAULT),
+			('Coinn', 14, 0, DEFAULT),
+			('Mighthunter', 27, 0, DEFAULT),
+			('Sternsong', 16, 0, DEFAULT),
+			('Anayarn', 45, 0, DEFAULT),
+			('Ironraven', 18, 0, DEFAULT),
+			('Paingrove', 20, 0, DEFAULT),
+			('Balladoge', 19, 0, DEFAULT),
+			('Bladecaster', 26, 0, DEFAULT),
+			('Mirathis', 24, 0, DEFAULT),
+			('Whisperfury', 33, 0, DEFAULT),
+			('Opidi', 34, 0, DEFAULT),
+			('Saikus', 22, 0, DEFAULT),
+			('Rockraven', 18, 0, DEFAULT),
+			('Buritius', 34, 0, DEFAULT);
